@@ -1,7 +1,7 @@
 #include "MCP9803.h"
 #include "math.h"
 
-bool Sensor::setAddress(int a0, int a1, int a2){
+bool MCP9803::setAddress(int a0, int a1, int a2){
     
     if(a0 == 1){
         address = address | 1;
@@ -32,7 +32,7 @@ bool Sensor::setAddress(int a0, int a1, int a2){
     return true;
 }
 
-float Sensor::temperature(){
+float MCP9803::temperature(){
     Wire.beginTransmission(address);
     Wire.write(0x00);
     byte status = Wire.endTransmission();
