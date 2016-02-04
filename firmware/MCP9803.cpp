@@ -22,7 +22,7 @@ bool MCP9803::setAddress(int a0, int a1, int a2){
     }
     Wire.beginTransmission(address);
     Wire.write(0x01);
-    Wire.write(0x01100000);
+    Wire.write(96);
     status = Wire.endTransmission();
     if(status != 0){
         Serial.println("Serial init failed 1");
