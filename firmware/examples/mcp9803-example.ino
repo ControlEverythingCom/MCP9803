@@ -1,5 +1,5 @@
 // This #include statement was automatically added by the Particle IDE.
-#include "mcp9803/MCP9803.h"
+#include "MCP9803/MCP9803.h"
 MCP9803 sensor;
 double temperature;
 
